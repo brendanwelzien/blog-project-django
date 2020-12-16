@@ -1,7 +1,7 @@
 from django.views.generic import TemplateView, ListView, DetailView
-from.models import blog, Post
+from .models import blog, Post
 
-class HomeView(ListView):
+class HomePageView(ListView):
     template_name = 'home.html'
     model = blog
 

@@ -8,4 +8,4 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete = models.CASCADE)
     body = models.TextField(default ="teehee")
     def __str__(self):
-        return self.body
+        return f'{self.title}, {self.author}'

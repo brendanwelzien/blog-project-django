@@ -5,6 +5,7 @@
 
 {% for blog in object_list %}
 <p> {{ blog.title }}</p>
-{% endfor %}
 <p> {{ blog.author }}</p>
+<a href="{% link 'post_detail' post.pk%}"> {{post}}</a>
+{% endfor %}
 {% endblock content %}
